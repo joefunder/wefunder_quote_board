@@ -1,0 +1,7 @@
+<!-- app/views/quotes/_quote_board.html.erb -->
+  <h1>Quote Board</h1>
+  <ul class="quote-list">
+    <% @quotes.each do |quote| %>
+      <li class="quote-item"><%= quote %></li>
+    <% end %>
+  </ul>

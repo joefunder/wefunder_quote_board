@@ -1,0 +1,21 @@
+<!-- quotes/index.html.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quote Board</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"> 
+</head>
+<body>
+
+<div class="quote-board">
+  <h1>Quote Board</h1>
+  <ul class="quote-list">
+    <% @quotes.each do |quote| %>
+      <li class="quote-item"><%= quote %></li>
+    <% end %>
+  </ul>
+</div>
+
+</body>
+</html>
