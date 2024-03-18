@@ -4,9 +4,20 @@
 <html>
 <head>
   <title>Quote Board</title>
-  <link rel="stylesheet" type="text/css" href="styles.css"> 
-</head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script></head>
 <body>
+
+<script>
+  $(document).ready(function() {
+    setInterval(function() {
+      $.post('/slack/events', function(response) {
+        console.log('Received response:', response);
+        location.reload();
+      });
+    }, 50000); // 50000 milliseconds = 50 seconds
+  });
+</script>
+
 
 <div class="quote-board">
   <h1>Quote Board</h1>

@@ -62,7 +62,7 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
-  config.hosts << /[a-z0-9]+\.ngrok\.io/
+  config.hosts << /[a-z0-9-]+\.ngrok-free\.app/
   config.hosts << "4dde-2600-1700-87d0-8c1f-f0a0-c295-650a-a045.ngrok-free.app"
 
   # Raises error for missing translations.
